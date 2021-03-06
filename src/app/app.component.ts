@@ -10,12 +10,5 @@ import {TodoService} from './shared/service/todo.service';
 export class AppComponent {
   constructor(private taskervice: TodoService, private router: Router){
     this.taskervice.load();
-    this.getMovies();
-  }
-
-  getMovies() {
-    this.taskervice.getMovies().subscribe((data) => {
-      console.log(data);
-    });
   }
 }

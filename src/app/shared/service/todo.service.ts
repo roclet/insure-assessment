@@ -15,9 +15,8 @@ export class TodoService {
   constructor(private store: Store<AppState>, private http: HttpClient) {
   }
 
-  getMovies(){
-    const title = 'Batman';
-    return this.http.get(`${this.apiUrl}?s=${title}&apikey=${this.apiKey}`);
+  getMovies(page, title){
+    return this.http.get(`${this.apiUrl}?s=${title}&page=${page}&apikey=${this.apiKey}`);
   }
 
   load() {
@@ -25,9 +24,5 @@ export class TodoService {
   }
   getData() {
     return this.store.select(getTaskState);
-  }
-
-  getItems() {
-    return this.store.select(getAllItems);
   }
 }
