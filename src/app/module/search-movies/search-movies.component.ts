@@ -22,7 +22,6 @@ export class SearchMoviesComponent implements OnInit {
   ngOnInit(): void {}
 
   search(){
-    console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx', this.searchMovie);
     this.getMovies();
   }
 
@@ -38,6 +37,7 @@ export class SearchMoviesComponent implements OnInit {
     const searchResult = JSON.parse(JSON.stringify(data));
     if (searchResult.Response) {
       this.movieModel = searchResult.Search;
+      console.log('movieModel', this.movieModel);
       this.count = Number(searchResult.totalResults);
     }
   }

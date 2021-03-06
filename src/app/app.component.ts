@@ -8,7 +8,6 @@ import {TodoService} from './shared/service/todo.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private taskervice: TodoService, private router: Router){
-    this.taskervice.load();
-  }
+  title = 'Todo-UI';
+  constructor(private taskervice: TodoService, private router: Router){}
 }
