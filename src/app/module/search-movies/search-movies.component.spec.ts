@@ -62,17 +62,4 @@ describe('SearchMoviesComponent', () => {
     expect(component.errorMessage).toBeUndefined();
     expect(component.searchMovie).toBe('');
   }));
-
-  // fit('get movie by title', (() => {
-  //
-  //   const displayColumn = ['imdbID', 'Title', 'Type', 'Year', 'Poster'];
-  //   expect(component.displayColumn).toEqual(displayColumn);
-  //   expect(component.displayColumn.length).toEqual(displayColumn.length);
-  //   expect(component.count).toEqual(0);
-  //   expect(component.page).toEqual(1);
-  //   expect(component.movieModel).toBeUndefined();
-  //   expect(component.errorMessage).toBeUndefined();
-  //   expect(component.searchMovie).toBe('');
-  // }));
-
 });
