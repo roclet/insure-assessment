@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { LoaderComponent } from './loader.component';
+import {LoaderService} from '../../shared/service/loader.service';
 
 describe('LoaderComponent', () => {
   let component: LoaderComponent;
@@ -8,7 +9,10 @@ describe('LoaderComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LoaderComponent ]
+      declarations: [ LoaderComponent ],
+      providers: [
+        LoaderService
+      ]
     })
     .compileComponents();
   });

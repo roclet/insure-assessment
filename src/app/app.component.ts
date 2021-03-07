@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { Router, NavigationError, NavigationEnd, NavigationStart } from '@angular/router';
-import {TodoService} from './shared/service/todo.service';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +7,5 @@ import {TodoService} from './shared/service/todo.service';
 })
 export class AppComponent {
   title = 'Todo-UI';
-  constructor(private taskervice: TodoService, private router: Router){}
+  constructor(){}
 }
