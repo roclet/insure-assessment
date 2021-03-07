@@ -37,7 +37,6 @@ export class SearchMoviesComponent implements OnInit {
     const searchResult = JSON.parse(JSON.stringify(data));
     if (searchResult.Response) {
       this.movieModel = searchResult.Search;
-      console.log('movieModel', this.movieModel);
       this.count = Number(searchResult.totalResults);
     }
   }
@@ -46,10 +45,4 @@ export class SearchMoviesComponent implements OnInit {
     this.page = event;
     this.getMovies();
   }
-
-  // onTableSizeChange(event): void { Batman
-  //   this.tableSize = event.target.value;
-  //   this.page = 1;
-  //   this.getMovies();
-  // }
 }

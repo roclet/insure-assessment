@@ -7,7 +7,6 @@ import {DebugElement} from '@angular/core';
 import {TodoService} from '../../shared/service/todo.service';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import {MovieModel} from '../../shared/model/movie.model';
 
 describe('SearchMoviesComponent', () => {
   let component: SearchMoviesComponent;
